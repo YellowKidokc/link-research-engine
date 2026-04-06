@@ -69,10 +69,19 @@ This repo becomes the research console and pipeline wrapper that:
 
 1. Finish Wikipedia discovery mode
 2. Add trusted-source enrichment mode
-3. Add workbook export and merge rules
-4. Add page-ripping mode
-5. Add classification and scoring
-6. Add Docker packaging
+3. Add canonical URL normalization and dedupe pass
+4. Add workbook export and merge rules
+5. Add page-ripping mode
+6. Add classification and scoring
+7. Add Docker packaging
+
+## Current utility scripts
+
+- `scripts/run_nonwiki_enrichment_demo.py`: collect candidate links and score role fit.
+- `scripts/run_nonwiki_dedupe.py`: canonicalize URLs, dedupe by case + canonical target, and output:
+  - `data/output/nonwiki_enrichment_demo_deduped.csv`
+  - `data/output/nonwiki_enrichment_demo_duplicates.csv`
+  - `data/output/nonwiki_enrichment_demo_dedupe_summary.json`
 
 ## Six control questions
 
